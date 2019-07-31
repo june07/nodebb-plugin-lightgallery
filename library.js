@@ -1,7 +1,6 @@
 let cheerio = require('cheerio');
 
 module.exports.myfiltermethod = function myfiltermethod(data, callback) {
-  console.log('myfiltermethod');
   if (data.templateData.posts) {
     let content = data.templateData.posts['0'].content;
     let $ = cheerio.load(content);

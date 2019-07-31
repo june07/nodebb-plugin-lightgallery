@@ -1,0 +1,18 @@
+before_install:
+  - chmod +x build.sh
+  
+language: node_js
+node_js:
+  - "node"
+
+cache: npm
+
+script: ./build.sh
+
+deploy:
+  provider: releases
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    tags: true

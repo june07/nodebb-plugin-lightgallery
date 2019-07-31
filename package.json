@@ -1,0 +1,38 @@
+{
+  "name": "nodebb-plugin-lightgallery",
+  "version": "1.0.0",
+  "description": "Lightgallery plugin for Nodebb",
+  "main": "library.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/june07/nodebb-plugin-lightgallery.git"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "lightgallery",
+    "lightbox",
+    "gallery"
+  ],
+  "author": "june07",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/june07/nodebb-plugin-lightgallery/issues"
+  },
+  "homepage": "https://github.com/june07/nodebb-plugin-lightgallery#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "lg-autoplay": "^1.0.4",
+    "lg-fullscreen": "^1.1.0",
+    "lg-hash": "^1.0.4",
+    "lg-pager": "^1.0.2",
+    "lg-share": "^1.1.0",
+    "lg-thumbnail": "^1.1.0",
+    "lg-video": "^1.2.2",
+    "lg-zoom": "^1.1.0",
+    "lightgallery": "^1.6.12"
+  }
+}

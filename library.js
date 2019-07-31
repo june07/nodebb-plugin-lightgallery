@@ -1,23 +1,37 @@
 let cheerio = require('cheerio');
 
 module.exports.myfiltermethod = function myfiltermethod(data, callback) {
-  if (data.templateData.posts) {
-    let content = data.templateData.posts['0'].content;
-    let $ = cheerio.load(content);
+  // Ignore api routes
+  if (data.req.path.startsWith('/api')) {
+    return callback(null, data);
+  }
 
-    let lightgalleryWrapper = $('<div id="lightgallery"></div>');
-    $('p').wrap(lightgalleryWrapper);
-    $('img').map((i, e) => {
+  if (data.templateData.posts) {
+    let updatedPosts = data.templateData.posts.map(post => {
+      return updatePost(post);
+    });
+    data.templateData.posts = updatedPosts;
+    
+    callback(null, data);
+  }
+  function updatePost(post) {
+    let $ = cheerio.load('<div id="lg-post-wrapper' + post.pid + '">' + post.content + '</div>');
+    let lightgalleryWrapper = $('<div id="lightgallery' + post.pid + '"></div>');
+
+    if ($('p > img').length > 0) $('#lg-post-wrapper' + post.pid).wrap(lightgalleryWrapper);
+    $('p > img').map((i, e) => {
       let imgsrc = $(e).attr('src');
       let anchorWrapper = $('<a></a>');
       $(e).attr('data-src', imgsrc);
       $(e).attr('data-exThumbImage', imgsrc);
       $(anchorWrapper).attr('href', imgsrc);
       
-      e = $(e).wrap(anchorWrapper);
-      return e;
+      $(e).wrap(anchorWrapper);
     });
-    data.templateData.posts['0'].content = $('body').html();
+    let html = $('body').html();
+    //console.log('\n\n---------' + html + '-------\n\n');
+    post.content = html;
+    return post;
   }
-  callback(null, data);
 }
+

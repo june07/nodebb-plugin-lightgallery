@@ -14,5 +14,11 @@ deploy:
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   keep_history: true
+  file: dist
   on:
     tags: true
+
+deploy:
+  provider: npm
+  email: "667@onezerohosting.com"
+  api_key: $NPM_TOKEN

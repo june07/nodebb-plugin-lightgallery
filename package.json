@@ -1,6 +1,9 @@
 {
   "name": "nodebb-plugin-lightgallery",
   "version": "1.0.0",
+  "nbbpm": {
+    "compatibility": "^1.12.2"
+  },
   "description": "Lightgallery plugin for Nodebb",
   "main": "library.js",
   "scripts": {

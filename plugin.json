@@ -14,13 +14,13 @@
   },
   "modules": {
     "lg-autoplay.js": "dist/plugins/lg-autoplay.min.js",
-    "lg-fullscreen.js": "dist/plugins/lg-fullscreen/dist/lg-fullscreen.min.js",
-    "lg-hash.js": "dist/plugins/lg-hash/dist/lg-hash.min.js",
-    "lg-pager.js": "dist/plugins/lg-pager/dist/lg-pager.min.js",
-    "lg-share.js": "dist/plugins/lg-share/dist/lg-share.min.js",
-    "lg-thumbnail.js":"dist/plugins/lg-thumbnail/dist/lg-thumbnail.min.js",
-    "lg-video.js": "dist/plugins/lg-video/dist/lg-video.min.js",
-    "lg-zoom.js": "dist/plugins/lg-zoom/dist/lg-zoom.min.js",
+    "lg-fullscreen.js": "dist/plugins/lg-fullscreen.min.js",
+    "lg-hash.js": "dist/plugins/lg-hash.min.js",
+    "lg-pager.js": "dist/plugins/lg-pager.min.js",
+    "lg-share.js": "dist/plugins/lg-share.min.js",
+    "lg-thumbnail.js":"dist/plugins/lg-thumbnail.min.js",
+    "lg-video.js": "dist/plugins/lg-video.min.js",
+    "lg-zoom.js": "dist/plugins/lg-zoom.min.js",
     "lightgallery.js": "dist/js/lightgallery.min.js"
   },
   "css": [

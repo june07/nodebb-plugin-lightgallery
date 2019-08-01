@@ -25,3 +25,4 @@ deploy:
   provider: npm
   email: "667@onezerohosting.com"
   api_key: $NPM_TOKEN
+  skip_cleanup: true

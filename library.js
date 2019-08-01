@@ -6,7 +6,7 @@ module.exports.myfiltermethod = function myfiltermethod(data, callback) {
     return callback(null, data);
   }
 
-  if (data.templateData.posts) {
+  if (data.templateData.posts !== undefined) {
     let updatedPosts = data.templateData.posts.map(post => {
       return updatePost(post);
     });
@@ -33,5 +33,6 @@ module.exports.myfiltermethod = function myfiltermethod(data, callback) {
     post.content = html;
     return post;
   }
+  return callback(null, data);
 }
 

@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-lightgallery",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "nbbpm": {
     "compatibility": "^1.12.2"
   },

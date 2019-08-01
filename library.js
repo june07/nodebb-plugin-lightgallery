@@ -12,7 +12,7 @@ module.exports.myfiltermethod = function myfiltermethod(data, callback) {
     });
     data.templateData.posts = updatedPosts;
     
-    callback(null, data);
+    return callback(null, data);
   }
   function updatePost(post) {
     let $ = cheerio.load('<div id="lg-post-wrapper' + post.pid + '">' + post.content + '</div>');

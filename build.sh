@@ -20,8 +20,8 @@ function build {
     echo `pwd`
 }
 
-sed -i "s/\$lg-path-fonts:\s'.*'/\$lg-path-fonts: \.\.\/plugins\/nodebb-plugin-lightgallery\/fonts\//" ./node_modules/lightgallery/src/sass/lg-variables.scss
-sed -i "s/\$lg-path-images:\s'.*'/\$lg-path-images: \.\.\/plugins\/nodebb-plugin-lightgallery\/images\//" ./node_modules/lightgallery/src/sass/lg-variables.scss
+sed -i "s/\$lg-path-fonts:\s'.*'/\$lg-path-fonts: '\.\.\/plugins\/nodebb-plugin-lightgallery\/fonts\/'/" ./node_modules/lightgallery/src/sass/lg-variables.scss
+sed -i "s/\$lg-path-images:\s'.*'/\$lg-path-images: '\.\.\/plugins\/nodebb-plugin-lightgallery\/images\/'/" ./node_modules/lightgallery/src/sass/lg-variables.scss
 build lightgallery
 plugins='lg-thumbnail lg-autoplay lg-video lg-fullscreen lg-pager lg-zoom lg-hash lg-share'
 for plugin in $plugins; do

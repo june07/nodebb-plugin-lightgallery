@@ -1,10 +1,14 @@
 #!/bin/bash
+rm -fR dist
 function build {
     package=$1
     cd node_modules/$package
     echo `pwd`
     sed -i "s/'default'\:\s\['\$'\]/default: ['jQuery']/" Gruntfile.js
     npm install
+    if [[ $package == "lightgallery" ]]; then
+	 sed -i "s/'connect', 'qunit', 'umd:all'/'connect', 'umd:all'/" Gruntfile.js
+    fi
     grunt --force
     if [[ $package == "lightgallery" ]]; then
         mv dist ../../

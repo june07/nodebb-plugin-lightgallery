@@ -14,8 +14,6 @@ before_script:
 
 script: ./build.sh
 
-before_deploy:
-  - cd dist
 deploy:
   provider: releases
   skip_cleanup: true

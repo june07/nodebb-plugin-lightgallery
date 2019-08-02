@@ -1,5 +1,5 @@
 before_install:
-  - sudo apt-get update -y
+  - apt-get update -y
   - chmod +x build.sh
   
 language: node_js
@@ -14,12 +14,13 @@ before_script:
 
 script: ./build.sh
 
+before_deploy:
+  - cd dist
 deploy:
   provider: releases
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   keep_history: true
-  file: dist
   on:
     tags: true
 

@@ -21,6 +21,6 @@ Or in the case you want to contribute to the project, you can git clone/npm inst
 	```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMzIzMDgxNSwtMjk1OTg2Mzc0LC0xNz
-MyNTg3MzEsLTE0MjMyNTYyMzhdfQ==
+eyJoaXN0b3J5IjpbNzIzMTE2MzUwLC0yOTU5ODYzNzQsLTE3Mz
+I1ODczMSwtMTQyMzI1NjIzOF19
 -->

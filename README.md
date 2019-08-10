@@ -3,6 +3,8 @@
 Adds [lightGallery](https://github.com/sachinchoolur/lightGallery) support for beautiful image viewing.  Per the lightGallery GitHub page, lightGallery is:
 > A customizable, modular, responsive, lightbox gallery plugin for jQuery.
 
+Note: You do not need to install lightGallery, JUST THIS PLUGIN.  LightGallery is a dependancy and as such will be automatically installed by nodebb-plugin-lightgallery.
+
 Goal for this project was simply to enable basic functionality with the default settings.  Currently no functionality exists with this plugin to change any of the default lightGallery settings (ie a NodeBB plugin control panel).
 
 ## Installation

@@ -8,6 +8,7 @@ require(['lightgallery'], function(lightgallery) {
     });
     function initLightGallery() {
       $("[id^=lightgallery]").lightGallery({
+        exThumbImage: 'data-exthumbimage',
         selector: 'a > img'
       });
     }

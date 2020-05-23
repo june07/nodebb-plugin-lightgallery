@@ -23,7 +23,6 @@ module.exports.myfiltermethod = function myfiltermethod(data, callback) {
       $(e).attr('data-src', imgsrc);
       $(e).attr('data-exThumbImage', imgsrc);
       $(anchorWrapper).attr('href', imgsrc);
-      
       $(e).wrap(anchorWrapper);
     });
     let html = $('body').html();

@@ -43,4 +43,6 @@ module.exports.myfiltermethod = function myfiltermethod(data, callback) {
   }
   return callback(null, data);
 }
-
+module.exports.filterUploadImage = function filterUploadImage(image, uid) {
+  debugger
+}

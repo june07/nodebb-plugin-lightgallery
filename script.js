@@ -8,8 +8,7 @@ require(['lightgallery'], function(lightgallery) {
     });
     function initLightGallery() {
       $("[id^=lightgallery]").lightGallery({
-        thumbnail: true,
-        selector: 'a'
+        selector: 'a > img'
       });
     }
   });

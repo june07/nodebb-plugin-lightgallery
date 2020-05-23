@@ -1,8 +1,8 @@
 let cheerio = require('cheerio'),
-  debug = require('debug')('nodebb-plugin-lightgallery:library');
+  debug = (process.env.NODE_ENV === 'dev') ? require('debug')('nodebb-plugin-lightgallery:library') : undefined;
 
 module.exports.myfiltermethod = function myfiltermethod(data, callback) {
-  debug('--------- myfiltermethod ---------');
+  if (debug) debug('--------- myfiltermethod ---------');
 
   if (data.templateData.posts !== undefined) {
     let updatedPosts = data.templateData.posts.map(post => {
@@ -27,7 +27,7 @@ module.exports.myfiltermethod = function myfiltermethod(data, callback) {
       $(e).wrap(anchorWrapper);
     });
     let html = $('body').html();
-    debug('---------' + html + '---------');
+    if (debug) debug('---------' + html + '---------');
     post.content = html;
     return post;
   }

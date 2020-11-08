@@ -13,6 +13,7 @@
     "img": "dist/img"
   },
   "modules": {
+    "jquery": "dist/plugins/jquery.min.js",
     "lg-autoplay.js": "dist/plugins/lg-autoplay.min.js",
     "lg-fullscreen.js": "dist/plugins/lg-fullscreen.min.js",
     "lg-hash.js": "dist/plugins/lg-hash.min.js",

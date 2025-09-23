@@ -7,7 +7,6 @@
   "description": "LightGallery plugin for NodeBB",
   "main": "library.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "node scripts/copy-assets.js"
   },
   "repository": {

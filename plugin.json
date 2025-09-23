@@ -1,32 +1,36 @@
 {
-  "id": "nodebb-plugin-lightgallery",
-  "url": "https://github.com/june07/nodebb-plugin-lightgallery",
-  "library": "./library.js",
-  "hooks": [
-    { "hook": "filter:middleware.render", "method": "myfiltermethod" }
-  ],
-  "scripts": [
-    "script.js"
-  ],
-  "staticDirs": {
-    "fonts": "dist/fonts",
-    "img": "dist/img"
-  },
-  "modules": {
-    "jquery.js": "dist/plugins/jquery.min.js",
-    "lg-autoplay.js": "dist/plugins/lg-autoplay.min.js",
-    "lg-fullscreen.js": "dist/plugins/lg-fullscreen.min.js",
-    "lg-hash.js": "dist/plugins/lg-hash.min.js",
-    "lg-pager.js": "dist/plugins/lg-pager.min.js",
-    "lg-share.js": "dist/plugins/lg-share.min.js",
-    "lg-thumbnail.js":"dist/plugins/lg-thumbnail.min.js",
-    "lg-video.js": "dist/plugins/lg-video.min.js",
-    "lg-zoom.js": "dist/plugins/lg-zoom.min.js",
-    "lightgallery.js": "dist/js/lightgallery.min.js"
-  },
-  "css": [
-   "dist/css/lightgallery.min.css"
-  ]
+    "id": "nodebb-plugin-lightgallery",
+    "name": "LightGallery",
+    "description": "Adds LightGallery support to NodeBB posts",
+    "version": "2.0.0",
+    "url": "https://github.com/june07/nodebb-plugin-lightgallery",
+    "main": "./library.js",
+    "hooks": [
+        {
+            "hook": "filter:middleware.render",
+            "method": "myfiltermethod"
+        }
+    ],
+    "scripts": [
+        "script.js"
+    ],
+    "scss": [
+        "dist/scss/lightgallery-bundle.scss"
+    ],
+    "staticDirs": {
+        "fonts": "dist/assets/fonts",
+        "images": "dist/assets/images"
+    },
+    "modules": {
+        "lightgallery": "dist/js/lightgallery.min.js",
+        "lg-autoplay": "dist/js/lg-autoplay.min.js",
+        "lg-fullscreen": "dist/js/lg-fullscreen.min.js",
+        "lg-hash": "dist/js/lg-hash.min.js",
+        "lg-pager": "dist/js/lg-pager.min.js",
+        "lg-share": "dist/js/lg-share.min.js",
+        "lg-thumbnail": "dist/js/lg-thumbnail.min.js",
+        "lg-video": "dist/js/lg-video.min.js",
+        "lg-zoom": "dist/js/lg-zoom.min.js"
+    },
+    "compatibility": ">=2.0.0"
 }
-
-

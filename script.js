@@ -20,7 +20,7 @@ require(['lightgallery', 'lg-autoplay', 'lg-fullscreen', 'lg-hash', 'lg-pager', 
 
             instances[this.id] = lightGallery(this, {
                 plugins,
-                selector: 'a'
+                selector: 'a[href$=".jpg"], a[href$=".jpeg"], a[href$=".png"], a[href$=".gif"], a[href$=".webp"]'
             })
 
             console.log('lightGallery initialized on container: ', this)

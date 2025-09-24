@@ -1,13 +1,13 @@
 {
   "name": "nodebb-plugin-lightgallery",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "nbbpm": {
     "compatibility": "^1.12.2"
   },
   "description": "LightGallery plugin for NodeBB",
   "main": "library.js",
   "scripts": {
-    "prepare": "node scripts/copy-assets.js"
+    "prepublishOnly": "node scripts/copy-assets.js"
   },
   "repository": {
     "type": "git",

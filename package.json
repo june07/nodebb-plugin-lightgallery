@@ -1,37 +1,43 @@
 {
-  "name": "nodebb-plugin-lightgallery",
-  "version": "2.0.7",
-  "nbbpm": {
-    "compatibility": "^1.12.2"
-  },
-  "description": "LightGallery plugin for NodeBB",
-  "main": "library.js",
-  "scripts": {
-    "prepare": "node scripts/copy-assets.js"
-  },
-  "files": [
-    "*",
-    "dist/"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/june07/nodebb-plugin-lightgallery.git"
-  },
-  "keywords": [
-    "nodebb",
-    "plugin",
-    "lightgallery",
-    "lightbox",
-    "gallery"
-  ],
-  "author": "june07",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/june07/nodebb-plugin-lightgallery/issues"
-  },
-  "homepage": "https://github.com/june07/nodebb-plugin-lightgallery#readme",
-  "dependencies": {
-    "cheerio": "^1.1.2",
-    "lightgallery": "^2.9.0-beta.1"
-  }
+    "name": "nodebb-plugin-lightgallery",
+    "version": "2.0.8",
+    "nbbpm": {
+        "compatibility": "^1.12.2"
+    },
+    "description": "LightGallery plugin for NodeBB",
+    "main": "library.js",
+    "scripts": {
+        "prepare": "node scripts/copy-assets.js && node scripts/sync-versions.js"
+    },
+    "files": [
+        "*",
+        "dist/"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/june07/nodebb-plugin-lightgallery.git"
+    },
+    "keywords": [
+        "nodebb",
+        "plugin",
+        "lightgallery",
+        "lightbox",
+        "gallery",
+        "images",
+        "photos"
+    ],
+    "funding": {
+        "type": "github",
+        "url": "https://github.com/sponsors/june07"
+    },
+    "author": "Adrian <adrian@june07.com> (https://june07.com)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/june07/nodebb-plugin-lightgallery/issues"
+    },
+    "homepage": "https://github.com/june07/nodebb-plugin-lightgallery#readme",
+    "dependencies": {
+        "cheerio": "^1.1.2",
+        "lightgallery": "^2.9.0-beta.1"
+    }
 }

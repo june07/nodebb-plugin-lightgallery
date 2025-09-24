@@ -2,7 +2,7 @@
     "id": "nodebb-plugin-lightgallery",
     "name": "LightGallery",
     "description": "Adds LightGallery support to NodeBB posts",
-    "version": "2.0.0",
+    "version": "2.0.8",
     "url": "https://github.com/june07/nodebb-plugin-lightgallery",
     "main": "./library.js",
     "hooks": [

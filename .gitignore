@@ -61,3 +61,4 @@ typings/
 .next
 assets
 dist
+.github/workflows/.npm-publish.yml.swp

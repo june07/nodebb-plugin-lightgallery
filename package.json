@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-lightgallery",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "nbbpm": {
     "compatibility": "^1.12.2"
   },
@@ -9,6 +9,10 @@
   "scripts": {
     "prepare": "node scripts/copy-assets.js"
   },
+  "files": [
+    "*",
+    "dist/"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/june07/nodebb-plugin-lightgallery.git"

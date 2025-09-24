@@ -34,9 +34,4 @@ require(['lightgallery', 'lg-autoplay', 'lg-fullscreen', 'lg-hash', 'lg-pager', 
 
     // Initialize on topic infinite scroll
     $(window).on('action:topic.loaded', initLightGallery)
-
-    // Prevent browser navigation when a gallery link is clicked
-    $(document).on('click', '[id^=lightgallery] a:has(img)', function (e) {
-        e.preventDefault()
-    })
 })

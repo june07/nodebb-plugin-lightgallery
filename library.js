@@ -12,12 +12,13 @@ plugin.myfiltermethod = function myfiltermethod(data, callback) {
         if ($('p > img').length > 0) $('#lg-post-wrapper' + post.pid).wrap(lightgalleryWrapper)
 
         $('p > img').map((i, e) => {
-            let imgsrc = $(e).attr('src')
-            let anchorWrapper = $('<a></a>')
+            const imgsrc = $(e).attr('src')
+            const anchorWrapper = $('<a></a>')
 
             $(e).attr('data-src', imgsrc)
             $(e).attr('data-exThumbImage', imgsrc)
-            $(anchorWrapper).attr('href', imgsrc)
+            $(anchorWrapper).attr('href', 'javascript:void(0)')
+            $(anchorWrapper).attr('data-src', imgsrc)
             $(e).wrap(anchorWrapper)
         })
         const html = $('body').html()

@@ -17,8 +17,7 @@ plugin.myfiltermethod = function myfiltermethod(data, callback) {
 
             $(e).attr('data-src', imgsrc)
             $(e).attr('data-exThumbImage', imgsrc)
-            $(anchorWrapper).attr('data-src', imgsrc)
-            $(anchorWrapper).attr('href', '#')
+            $(anchorWrapper).attr('href', imgsrc)
             $(e).wrap(anchorWrapper)
         })
         const html = $('body').html()
